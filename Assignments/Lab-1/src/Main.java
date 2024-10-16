@@ -1,3 +1,7 @@
+//also created a Main driver class to test the singers
+// by creating a Singers object, displaying its default values,
+// modifying them using setters, and printing the updated values to show the results.
+
 public class Main {
     public static void main(String[] args) {
         // no argument constructor

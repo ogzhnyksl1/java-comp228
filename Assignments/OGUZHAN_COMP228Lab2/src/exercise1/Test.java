@@ -2,6 +2,10 @@ package exercise1;
 import javax.swing.*;
 import java.util.Random;
 
+// I built a Test class to simulate a multiple-choice quiz with methods like
+// simulateQuestion() for displaying questions, inputAnswer() for collecting responses,
+// and generateMessage() for displaying random feedback based on user answers.
+
 public class Test {
 
     //array for q's

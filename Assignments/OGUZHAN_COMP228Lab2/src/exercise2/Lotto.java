@@ -2,6 +2,9 @@ package exercise2;
 import javax.swing.*;
 import java.util.Random;
 
+// Lotto class to generate random numbers and simulate a lotto game
+// where the user tries to match the sum of three numbers within five attempts.
+
 public class Lotto {
     private int[] lottoNumbers = new int[3];
 

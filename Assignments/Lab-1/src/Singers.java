@@ -1,3 +1,7 @@
+// created a class named Singers to store singer records
+// The class has five private instance variables
+// (id, name, address, dob, and albumsPublished)
+
 public class Singers {
     private int id;
     private String name;
@@ -13,6 +17,7 @@ public class Singers {
         this.dob = "Unknown";
         this.albumsPublished = 0;
     }
+    //multiple constructors to allow more ways to create Singers objects
 
     // 1 argument
     public Singers(int id) {
@@ -43,6 +48,7 @@ public class Singers {
         this(id, name, address, dob);
         this.albumsPublished = albumsPublished;
     }
+//implemented setter and getter methods for data access
 
     // getters and setters
     public int getId() {
