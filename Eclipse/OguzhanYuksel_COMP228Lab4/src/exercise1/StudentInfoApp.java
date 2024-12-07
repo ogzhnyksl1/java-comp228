@@ -11,16 +11,15 @@ public class StudentInfoApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // Main layout
+        //borderpane
         BorderPane mainLayout = new BorderPane();
         mainLayout.setPadding(new Insets(10));
 
-        // Form fields for student details
         GridPane formGrid = new GridPane();
         formGrid.setVgap(10);
         formGrid.setHgap(10);
         formGrid.setPadding(new Insets(10));
-
+        //labels
         Label nameLabel = new Label("Name:");
         TextField nameField = new TextField();
         Label addressLabel = new Label("Address:");
@@ -51,7 +50,6 @@ public class StudentInfoApp extends Application {
         formGrid.add(emailLabel, 0, 6);
         formGrid.add(emailField, 1, 6);
 
-        // Checkboxes for additional activities
         CheckBox studentCouncilCheckBox = new CheckBox("Student Council");
         CheckBox volunteerWorkCheckBox = new CheckBox("Volunteer Work");
         formGrid.add(studentCouncilCheckBox, 1, 7);
@@ -59,7 +57,7 @@ public class StudentInfoApp extends Application {
 
         mainLayout.setLeft(formGrid);
 
-        // Major selection with radio buttons
+        // radio buttons
         RadioButton csRadio = new RadioButton("Computer Science");
         RadioButton businessRadio = new RadioButton("Business");
         ToggleGroup majorGroup = new ToggleGroup();
@@ -69,7 +67,7 @@ public class StudentInfoApp extends Application {
         VBox majorBox = new VBox(10, new Label("Select Major:"), csRadio, businessRadio);
         majorBox.setPadding(new Insets(10));
 
-        // Courses ComboBox and ListView
+        // Combobox and Listview
         ComboBox<String> courseComboBox = new ComboBox<>();
         ListView<String> courseListView = new ListView<>();
 
@@ -90,7 +88,7 @@ public class StudentInfoApp extends Application {
         rightBox.setPadding(new Insets(10));
         mainLayout.setRight(rightBox);
 
-        // Display area for student information
+        // student information
         TextArea displayArea = new TextArea();
         displayArea.setPrefHeight(100);
         displayArea.setEditable(false);
@@ -119,7 +117,6 @@ public class StudentInfoApp extends Application {
         displayBox.setPadding(new Insets(10));
         mainLayout.setBottom(displayBox);
 
-        // Set up and show the stage
         Scene scene = new Scene(mainLayout, 800, 600);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Student Information Entry");
